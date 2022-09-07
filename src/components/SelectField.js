@@ -3,11 +3,11 @@ import { Box } from '@mui/system'
 import React, { useState } from 'react'
 
 const SelectField = (props) => {
-    const { label } = props
+    const { label, options } = props
     const [ value, setValue] = useState('')
 
-    const handleChange = () => {
-
+    const handleChange = (e) => {
+        setValue(e.target.value)
     }
 
     return (
@@ -15,9 +15,9 @@ const SelectField = (props) => {
         <FormControl fullWidth>
             <InputLabel>{label}</InputLabel>
             <Select value={value} label={label} onChange={handleChange}>
-                <MenuItem>Option 1</MenuItem>
-                <MenuItem>Option 2</MenuItem>
-                <MenuItem>Option 3</MenuItem>
+                {options.map(({id,name}) => (
+                    <MenuItem key={id} value={id}>{name}</MenuItem>
+                ))}
             </Select>
         </FormControl>
     </Box>
