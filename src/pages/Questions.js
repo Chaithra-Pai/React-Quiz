@@ -6,7 +6,6 @@ export const Questions = () => {
   let apiUrl = `/api.php?amount=10&category=19&difficulty=medium&type=multiple`
 
   const { response, error, loading } = useAxios({ url: apiUrl })
-  // console.log(response);
 
   return (
     <Box>
