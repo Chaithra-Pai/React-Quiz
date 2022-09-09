@@ -1,6 +1,6 @@
-import { FormControl, TextField } from '@mui/material'
-import { Box } from '@mui/system'
-import React from 'react'
+import { FormControl, TextField } from '@mui/material';
+import { Box } from '@mui/system';
+import React from 'react';
 
 const TextFieldComp = () => {
 
@@ -17,4 +17,4 @@ const TextFieldComp = () => {
   )
 }
 
-export default TextFieldComp
+export default TextFieldComp;

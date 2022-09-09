@@ -1,14 +1,14 @@
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
-import { Box } from '@mui/system'
-import React, { useState } from 'react'
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
+import { Box } from '@mui/system';
+import React, { useState } from 'react';
 
 const SelectField = (props) => {
-    const { label, options } = props
-    const [ value, setValue] = useState('')
+    const { label, options } = props;
+    const [ value, setValue] = useState('');
 
     const handleChange = (e) => {
-        setValue(e.target.value)
-    }
+        setValue(e.target.value);
+    };
 
     return (
     <Box mt={3} size='small' width='100%'>
@@ -24,4 +24,4 @@ const SelectField = (props) => {
     )
 }
 
-export default SelectField
+export default SelectField;
