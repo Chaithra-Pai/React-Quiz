@@ -13,6 +13,10 @@ export const Questions = () => {
       <Typography mt={5}>This is the question</Typography>
       <Box mt={2}><Button variant='contained'>Answer 1</Button></Box>
       <Box mt={2}><Button variant='contained'>Answer 2</Button></Box>
+      <Box mt={2}><Button variant='contained'>Answer 3</Button></Box>
+      <Box mt={2}><Button variant='contained'>Answer 4</Button></Box>
+      <Box mt={2}><Button variant='contained'>Answer 5</Button></Box>
+      <Box mt={2}><Button variant='contained'>Answer 6</Button></Box>
       <Box mt={5}>Score: 2 / 5</Box>
     </Box>
   )
