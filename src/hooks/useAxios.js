@@ -1,7 +1,7 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
-axios.defaults.baseURL = 'https://opentdb.com/'
+axios.defaults.baseURL = 'https://opentdb.com/';
 
 const useAxios = ({url}) => {
 
@@ -22,4 +22,4 @@ const useAxios = ({url}) => {
     return { response, error, loading }
 }
 
-export default useAxios
+export default useAxios;
